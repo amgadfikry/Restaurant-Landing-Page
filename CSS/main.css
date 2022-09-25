@@ -1,0 +1,63 @@
+:root{
+    --color:#27292c;
+    --font-prim:DynaPuff;
+    --font-main:"Open Sans"
+}
+body{
+    overflow-x: hidden;
+}
+/*main section*/
+.bg-section , .fifth-section{
+    background-image: url(../Images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-section, section{
+    font-family: var(--font-main);
+}
+.main-head, .main-header, .sub-header{
+    font-family: var(--font-prim);
+}
+.leaf{
+    right: -3vw;
+    bottom: -21vh;
+}
+/*second section*/
+.card{
+    border: 0;
+}
+/*third section*/
+.third-section{
+    background-color: var(--color);
+}
+/*fifth section*/
+.fifth-text::after{
+    content: "";
+    width: 20%;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+}
+/*subscribe section*/
+.subscribe{
+    background-color: var(--color);
+}
+.btn-sub:hover{
+    background-color: transparent;
+    color: white;
+}
+.leaf-sub{
+    top: -5vh;
+}
+/*footer*/
+.icons a {
+margin-right: 10px;
+transition: all 0.3s;
+}
+.icons a:hover{
+    transform: scale(1.1);
+}
